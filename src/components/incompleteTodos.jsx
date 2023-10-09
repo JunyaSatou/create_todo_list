@@ -18,7 +18,7 @@ export const IncompleteTodos = (props) => {
       <ul>
         {incompleteTodos.map((todo, index) => {
           return (
-            <div key={todo} className="list-row">
+            <div key={index} className="list-row">
               <li>{todo}</li>
               <button onClick={() => onClickComplete(index)}>完了</button>
               <button onClick={() => onClickDelete(index)}>削除</button>
